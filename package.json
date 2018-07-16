@@ -1,0 +1,24 @@
+{
+  "name": "node-functions",
+  "version": "1.0.0",
+  "description": "simple REST API to demo stepflow engine",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcalvarado1965/node-functions.git"
+  },
+  "author": "jcalvarado1965@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcalvarado1965/node-functions/issues"
+  },
+  "homepage": "https://github.com/jcalvarado1965/node-functions#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}
