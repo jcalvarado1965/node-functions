@@ -7,6 +7,7 @@ app.use(bodyParser.json({strict: false}));
 app.get('/', (req, res) => res.send("Function server is up!"));
 
 app.post('/adder', (req, res) => {
+    console.log("/adder with body ", req.body);
     if (req.body instanceof Array) {
         let sum = 0;
         let isOk = true;
@@ -29,6 +30,7 @@ app.post('/adder', (req, res) => {
 });
 
 app.post('/multiplier', (req, res) =>  {
+    console.log("/multiplier with body ", req.body);
     if (req.body instanceof Array) {
         let mult = 1;
         let isOk = true;
@@ -51,7 +53,7 @@ app.post('/multiplier', (req, res) =>  {
 });
 
 app.post('/echo', (req, res) =>  {
-    console.log("Got body ", req.body);
+    console.log("/echo with body ", req.body);
     res.status(200).send(req.body);
  });
 
